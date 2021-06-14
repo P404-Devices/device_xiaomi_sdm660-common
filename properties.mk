@@ -98,6 +98,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
+    
+# Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.sf.disable_blurs=1 \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1 \
+    debug.sf.disable_backpressure=1
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
